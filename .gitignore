@@ -1,0 +1,12 @@
+node_modules
+.next
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+.prismor
+# desktop app auto-saves chat deliverables here; never part of the project
+Claude outputs/
+.prismor/
+.DS_Store
+*.DS_Store
