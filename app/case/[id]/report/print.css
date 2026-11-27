@@ -1,0 +1,27 @@
+/* OpenFish Forensic Dossier Print Stylesheet */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt;
+  }
+
+  header, nav, button, .no-print {
+    display: none !important;
+  }
+
+  .report-page-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .border-box {
+    border: 1px solid #d1d5db !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    color: #000000 !important;
+  }
+}
