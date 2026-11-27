@@ -278,12 +278,25 @@ npm run dev
 # Run automated end-to-end smoke verification across 5 diverse scam vectors
 npm run smoke
 
+# Run forensic unit test suite (12 verification assertions)
+npm test
+
 # Run in CI assertion mode (exits 1 on any forensic failure)
 SMOKE_ASSERT=1 npm run smoke
 
 # Test custom live inputs directly from CLI
 node scripts/smoke.mjs "https://suspicious-pay.online" "refundfraud@okaxis"
 ```
+
+<br>
+
+### 📚 Extended Engineering & Compliance Documentation
+
+- [📖 REST API Reference](./docs/API.md) — Comprehensive documentation of `/api/cases`, SSE streaming, and case export endpoints.
+- [⚖️ Section 65B Forensics Specification](./docs/FORENSICS.md) — Cryptographic chain of custody, chronometer synchronization, and legal compliance.
+- [🤝 Contributing Guidelines](./CONTRIBUTING.md) — Code quality standards, testing commands, and git workflow.
+- [🛡️ Security Policy](./SECURITY.md) — Sandbox isolation guarantees and vulnerability reporting procedures.
+- [📜 Changelog](./CHANGELOG.md) — Detailed version history and semantic releases.
 
 <br>
 
